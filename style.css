@@ -30,7 +30,7 @@ body {
 
 #full{
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -196,6 +196,6 @@ body {
     height: 92vh;
   }
   #full{
-    height: 92vh;
+    height: 100vh;
   }
 }
