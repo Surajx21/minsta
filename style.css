@@ -16,25 +16,33 @@ body {
   align-items: center;
 }
 
-.container {
+.box{
   width: 27rem;
   height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  height: 100%;
   background-color: #e8e6e6;
   border-radius: 10px;
   overflow-y: auto;
-  position: relative;
 }
 .container::-webkit-scrollbar{
   display: none;
 }
 
 #full{
-  width: 100%;
-  height: 100vh;
+  width: 95%;
+  height: 95%;
   background-size: cover;
   background-position: center;
   position: absolute;
   display: none;
+  border-radius: 10px;
   z-index: 2;
 }
 #bottom-nav {
@@ -191,11 +199,8 @@ body {
 
 
 @media (max-width: 786px) {
-  .container {
+  .container, #full {
     width: 20rem;
     height: 92vh;
-  }
-  #full{
-    height: 100vh;
   }
 }

@@ -61,6 +61,7 @@ let post_data = [
 let clutter = "";
 let story = document.querySelector(".stories");
 let posts = document.querySelector(".content");
+let container = document.querySelector(".container");
 let full = document.querySelector("#full");
 
 story_data.forEach(function (elem, index) {
@@ -111,9 +112,11 @@ story.addEventListener("click", function (dets) {
     if (data != "") {
       full.style.display = "block";
       full.style.background = `url(${data})`;
+      container.style.display = "none"
     }
-    let timeot = setTimeout(function () {
+    setTimeout(function () {
       full.style.display = "none";
+      container.style.display = "block"
     }, 2000);
   }
 });
